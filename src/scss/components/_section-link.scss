@@ -1,0 +1,34 @@
+@use "../helpers/" as h;
+
+.section__link {
+	display: block;
+	text-decoration: none;
+	color: var(--moderate-cyan);
+	padding-bottom: 0.25em;
+	border-bottom: 2px solid;
+
+	@include h.link-icon(
+		0.25em,
+		after,
+		"../../../dist/images/icon-arrow.svg",
+		24px,
+		24px
+	);
+
+	&::after {
+		position: relative;
+		transform: translateY(6px);
+	}
+	&:visited {
+		color: var(--clr-primary-desaturated);
+	}
+
+	&:focus-visible {
+		outline: none;
+		color: var(--moderate-cyan-hover);
+	}
+
+	&:hover {
+		color: var(--moderate-cyan-hover);
+	}
+}

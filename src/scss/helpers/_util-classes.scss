@@ -1,0 +1,20 @@
+@use "../helpers/mixins" as m;
+@use "../helpers/variables" as v;
+
+.clr-primary-dark {
+	color: var(--clr-primary-dark);
+}
+
+.clr-neutral-light {
+	color: var(--light-grayish-blue);
+}
+
+.bg-primary-desaturated {
+	background-color: var(--clr-primary-desaturated);
+}
+
+.bg-primary-dark {
+	background-color: var(--clr-primary-dark);
+}
+
+/* For Layouts */

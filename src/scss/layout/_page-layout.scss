@@ -1,0 +1,105 @@
+@use "../helpers/" as h;
+// .flex-two-column {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-between;
+// 	gap: 2rem;
+// }
+
+.flex-two-column {
+	display: flex;
+	flex-direction: column;
+	gap: var(--grid-gap-mobile);
+	@include h.mobile-up {
+		gap: var(--grid-gap);
+	}
+	align-items: center;
+	// justify-content: center;
+}
+
+@include h.desktop-down {
+	main .section {
+		&:nth-child(1),
+		&:nth-child(3) {
+			text-align: center;
+		}
+		&:nth-child(3) .section__text {
+			order: -1;
+		}
+		h1,
+		h2,
+		h3 {
+			text-align: center;
+		}
+	}
+}
+
+@include h.desktop-up {
+	.flex-two-column {
+		flex-direction: row-reverse;
+	}
+
+	main {
+		section:nth-child(1) .flex-two-column {
+			> *:nth-child(2) {
+				width: 50%;
+			}
+
+			> *:nth-child(1) {
+				width: 50%;
+			}
+		}
+		section:nth-child(2),
+		section:nth-child(3) {
+			.flex-two-column {
+				> *:nth-child(2) {
+					width: 55%;
+				}
+				> *:nth-child(1) {
+					width: 45%;
+				}
+			}
+		}
+	}
+}
+
+@include h.mobile-up {
+	h1,
+	h2,
+	h3 {
+		max-width: 675px;
+	}
+	.section__text {
+		p {
+			// Instead of doing this I should've used a container
+			// to also contain the form with the text
+			// now I have to set a max-width on the form too
+			max-width: 57ch;
+		}
+	}
+}
+
+@include h.mobile-to-desktop {
+	h1,
+	h2,
+	h3,
+	.section__text p:not(.section__card__name) {
+		margin-inline: auto;
+	}
+}
+.container {
+	width: min(90%, 1350px);
+	margin: 0 auto;
+}
+
+.grid-gap {
+	display: grid;
+	gap: var(--grid-gap-mobile);
+	justify-items: center;
+	@include h.desktop-up {
+		justify-items: start;
+	}
+	@include h.desktop-up {
+		gap: var(-grid-gap);
+	}
+}

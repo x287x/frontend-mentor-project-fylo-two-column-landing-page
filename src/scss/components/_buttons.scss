@@ -1,0 +1,21 @@
+@use "../helpers/" as h;
+
+.form-button {
+	padding: 0.75em 2.25em;
+	color: var(--light-grayish-blue);
+	background-color: var(--bright-blue);
+	border: none;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	outline: none;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	min-width: fit-content;
+}
+
+.form-button:focus {
+	background-color: hsl(224, 93%, 30%);
+}
+.form-button:is(:hover, :active) {
+	background-color: hsl(224, 93%, 40%);
+}

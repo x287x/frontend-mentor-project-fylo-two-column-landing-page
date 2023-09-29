@@ -1,0 +1,63 @@
+@use "../helpers/variables";
+@use "../helpers/mixins" as m;
+
+body {
+	font-size: var(--fs-paragraph);
+	font-family: var(--ff-body);
+	line-height: 1.5;
+	background-color: var(--light-grayish-blue);
+}
+
+h1,
+h2,
+h3,
+.header__nav,
+button {
+	font-family: var(--ff-headers);
+}
+
+button,
+input {
+	font: inherit;
+	line-height: inherit;
+}
+
+h1,
+h2,
+h3,
+.button {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: clamp(1.65rem, 7vw, 2.5rem);
+	// font-size: 2.125rem;
+	line-height: 1.2;
+}
+.small-text-on-mobile {
+	font-size: 1.125rem;
+	@include m.mobile-up {
+		font-size: clamp(1.65rem, 7vw, 2.5rem);
+		// font-size: 2.125rem;
+	}
+}
+
+h3 {
+	font-size: clamp(1.5rem, 5vw, 2rem);
+	// font-size: 1.75rem;
+	line-height: 1.2;
+}
+
+.nav__link {
+	font-weight: 400;
+}
+
+main > section:first-child {
+	font-size: large;
+}
+
+h1,
+h2,
+h3 {
+	text-wrap: balance;
+}

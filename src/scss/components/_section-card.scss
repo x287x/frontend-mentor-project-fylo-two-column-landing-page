@@ -1,0 +1,47 @@
+@use "../helpers/" as h;
+
+.section__card {
+	max-width: 500px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+		rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+		rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	border-radius: 0.25rem;
+	padding: 2em 3em;
+	&::before {
+		content: "";
+		display: block;
+		width: 26px;
+		height: 24px;
+		background: url(../../../dist/images/icon-quotes.svg);
+		background-position: 0 0;
+		background-size: contain;
+	}
+
+	display: grid;
+	gap: 1.5em;
+
+	p {
+		margin-bottom: 0;
+	}
+
+	&__name-container {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+	}
+
+	&__img {
+		width: 50px;
+		border-radius: 50%;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-family: var(--ff-headers);
+	}
+	&__position {
+		display: block;
+		font-weight: 400;
+		font-size: 0.75rem;
+	}
+}

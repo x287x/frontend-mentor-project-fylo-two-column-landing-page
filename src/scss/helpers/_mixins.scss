@@ -1,0 +1,78 @@
+// apply it in the form styling file
+@mixin remove-number-input-arrows {
+	/* Chrome, Safari, Edge, Opera */
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	/* Firefox */
+	input[type="number"] {
+		-moz-appearance: textfield;
+	}
+}
+
+@mixin nav-list-flex($gap: 1em, $direction: row) {
+	display: flex;
+	flex-direction: $direction;
+	list-style: none;
+	gap: $gap;
+}
+
+@mixin desktop-up {
+	@media (min-width: 48.8125em) {
+		@content;
+	}
+}
+
+@mixin desktop-down {
+	@media (max-width: 48.75em) {
+		@content;
+	}
+}
+
+@mixin mobile-up {
+	@media (min-width: 31.3125rem) {
+		@content;
+	}
+}
+
+@mixin mobile-down {
+	@media (max-width: 31.25rem) {
+		@content;
+	}
+}
+
+@mixin mobile-to-desktop {
+	@media (min-width: 31.3125rem) and (max-width: 48.8125em) {
+		@content;
+	}
+}
+
+@mixin link-icon(
+	$margin: 1em,
+	$element: before,
+	$url,
+	$width: 16px,
+	$height: 16px
+) {
+	&::#{$element} {
+		content: "";
+		display: inline-block;
+
+		width: $width;
+		height: $height;
+
+		@if $element == before {
+			margin-inline-end: $margin;
+		} @else {
+			margin-inline-start: $margin;
+		}
+
+		background: url($url);
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}

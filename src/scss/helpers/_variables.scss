@@ -1,0 +1,33 @@
+:root {
+	--clr-primary-dark: hsl(243, 87%, 12%);
+	--clr-primary-desaturated: hsl(238, 22%, 44%);
+
+	--bright-blue: hsl(224, 93%, 58%);
+	--moderate-cyan: hsl(170, 45%, 43%);
+	--moderate-cyan-hover: hsl(170, 45%, 35%);
+
+	--light-grey: hsl(0, 0%, 75%);
+	--light-grayish-blue: hsl(240, 75%, 98%);
+
+	--fs-paragraph: 1rem;
+
+	--ff-body: "Open Sans", sans-serif;
+	--ff-headers: "Raleway", sans-serif;
+
+	--header-logo-height-mobile: 2rem;
+	--header-logo-height: 3rem;
+	--header-padding-top: 3rem;
+	--header-padding-top-mobile: 2rem;
+
+	--grid-gap: 2rem;
+	--grid-gap-mobile: 3rem;
+	--heading-margin-bottom: 2rem;
+	--paragraph-margin-bottom: 1rem;
+
+	// form
+	--error-clr: hsl(355, 70%, 65%);
+	--error-background: #f2e6e6;
+
+	--valid-background: hsl(170, 45%, 90%);
+	--valid-text: hsl(170, 45%, 25%);
+}

@@ -1,0 +1,28 @@
+@use "../helpers" as h;
+.section {
+	padding-block: 5em;
+}
+
+header {
+	padding-top: var(--header-padding-top-mobile);
+	@include h.desktop-up {
+		padding-top: var(--header-padding-top);
+	}
+}
+
+.section {
+	&:nth-child(1),
+	&:nth-child(2) {
+		min-height: 100vh;
+	}
+}
+
+h1,
+h2,
+h3 {
+	margin-bottom: var(--heading-margin-bottom);
+}
+
+p:not(:last-child) {
+	margin-bottom: var(--paragraph-margin-bottom);
+}

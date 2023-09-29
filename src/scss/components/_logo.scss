@@ -1,0 +1,13 @@
+@use "../helpers/mixins" as m;
+@use "../helpers/variables";
+.logo {
+	&--header {
+		height: var(--header-logo-height-mobile);
+		@include m.mobile-up {
+			height: var(--header-logo-height);
+		}
+	}
+	&--footer {
+		margin-bottom: 2rem;
+	}
+}
