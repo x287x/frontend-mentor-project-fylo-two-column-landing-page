@@ -27,10 +27,9 @@ Users should be able to:
 
 ![Website's Hero Section](./screenshot.png)
 
-### Links
+### Live Site
 
--   Solution URL: [Solution](.)
--   Live Site URL: [Live Site](./index.html)
+[https://x287x.github.io/frontend-mentor-project-fylo-two-column-landing-page/](https://x287x.github.io/frontend-mentor-project-fylo-two-column-landing-page/)
 
 ## My process
 
