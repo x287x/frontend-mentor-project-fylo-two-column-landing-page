@@ -104,7 +104,7 @@
 			@include m.link-icon(
 				1em,
 				before,
-				"../../../dist/images/icon-phone.svg",
+				"../../images/icon-phone.svg",
 				20px
 			);
 		}
@@ -112,7 +112,7 @@
 			@include m.link-icon(
 				1em,
 				before,
-				"../../dist/images/icon-email.svg",
+				"../../images/icon-email.svg",
 				20px
 			);
 		}

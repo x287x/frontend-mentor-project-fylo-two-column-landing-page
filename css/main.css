@@ -524,7 +524,7 @@ h3 {
   width: 20px;
   height: 16px;
   margin-inline-end: 1em;
-  background: url("../../../dist/images/icon-phone.svg");
+  background: url("../../images/icon-phone.svg");
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -535,7 +535,7 @@ h3 {
   width: 20px;
   height: 16px;
   margin-inline-end: 1em;
-  background: url("../../dist/images/icon-email.svg");
+  background: url("../../images/icon-email.svg");
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -698,7 +698,7 @@ p:not(:last-child) {
   width: 24px;
   height: 24px;
   margin-inline-start: 0.25em;
-  background: url("../../../dist/images/icon-arrow.svg");
+  background: url("../../images/icon-arrow.svg");
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -743,7 +743,7 @@ p:not(:last-child) {
   display: block;
   width: 26px;
   height: 24px;
-  background: url(../../../dist/images/icon-quotes.svg);
+  background: url(../../images/icon-quotes.svg);
   background-position: 0 0;
   background-size: contain;
 }
